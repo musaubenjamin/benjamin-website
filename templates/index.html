@@ -1,57 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musau Benjamin | Sebei Gospel Artist</title>
-    <style>
-        body { font-family: Arial; background: #0a0a0a; color: white; text-align: center; margin: 0; }
-        header { background: linear-gradient(135deg, #FFD700, #FF8C00); color: black; padding: 60px 20px; }
-        h1 { font-size: 2.5em; margin: 0; }
-        .section { padding: 40px 20px; }
-        .btn { background: #FFD700; color: black; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; margin-top: 10px; }
-        .song { background: #1a1a1a; margin: 15px auto; padding: 20px; border-radius: 10px; max-width: 400px; }
-        footer { padding:20px; background:#111; font-size: 0.9em; }
-    </style>
-</head>
+<style>
+    body { font-family: Arial; background: #0a0a0a; color: white; text-align: center; margin: 0; }
+    .section-dark { background: #1a0a1a; padding: 50px 20px; }
+    .section-green { background: #2a3d2a; padding: 50px 20px; }
+    .section-gold { background: #FFD700; color: black; padding: 50px 20px; }
+    .section-maroon { background: #4a0a2a; padding: 50px 20px; }
+    h1 { font-size: 2.8em; margin: 0; color: #FFD700; font-weight: bold; }
+    h2 { font-size: 2.2em; color: #FFD700; margin-bottom: 20px; }
+    .btn { background: #FFD700; color: black; padding: 14px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; margin: 8px; }
+    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .card { background: #222; padding: 20px; border-radius: 15px; width: 280px; }
+    .card img { width: 100%; border-radius: 10px; }
+</style>
 <body>
     <header>
-        <h1>Musau Benjamin</h1><img src="/static/profile.jpg" alt="Musau Benjamin" style="width:180px; border-radius:50%; margin:15px auto; display:block; border:3px solid #ffaa00;">
-        <p>Gospel Artist | Sebei Praise & worship</p>
-        <a href="#contact" class="btn">Book Me</a>
-    </header>
-
-    <div class="section">
-        <div class="section">
-    <h2>My Music</h2>
-    
-    <div class="song 1">
-        <h3>Suretap Makoryonded | Sebei worship song</h3>
-        <a href="https://youtu.be/nYLKK1-Z39U" class="btn" target="_blank">Listen Now</a>
+        <body>
+    <!-- SECTION 1: HERO - MY JOURNEY -->
+    <div class="section-dark">
+        <img src="/static/profile.jpg" alt="Musau" style="width:200px; border-radius:50%; border:4px solid #FFD700;">
+        <h2>MY JOURNEY INTO DESIGN</h2>
+        <p>"Design should spark joy, solve problems, and feel like you."</p>
+        <p>I started as a bot user, & now an upcoming musician, but found that design helps me spread the Gospel in a new way.</p>
     </div>
 
-    <div class="song">
-        <h3>Song 2</h3>
-        <p>Krabungung (Your gift) Sebei praise song</p>
-        <a href="https://youtu.be/xFfCuD_WCs0" class="btn" target="_blank">Listen Now</a>
-</div>
-
-    <div class="section">
-        <h2>Follow Me</h2>
-        <a href="https://facebook.com/musau.benjamin" class="btn" style="background:#1877F2; color:white; margin:5px;">📘 Facebook</a>
-        <a href="https://instagram.com/musau.benjamin" class="btn" style="background:#E1306C; color:white; margin:5px;">📷 Instagram</a>
-        <a href="https://tiktok.com/@rarespecies100" class="btn" style="background:#000; color:white; margin:5px;">🎵 TikTok</a>
-        <a href="https://benjaminmusau.blogspot.com" class="btn" style="background:#FF5722; color:white; margin:5px;">📝 Blog</a>
+    <!-- SECTION 2: ABOUT ME -->
+    <div class="section-maroon">
+        <h1>HI, I'M MUSAU BENJAMIN, a rare kind of species, a diamond and the only precious gift God gave to mankind</h1>
+        <p>Gospel Artist | Sebei Praise | Designer</p>
+        <a href="#music" class="btn">Explore My Music</a>
     </div>
 
-    <div class="section" id="contact">
-        <h2>Book Me</h2>
-        <p>For events, praise & worship, collaborations</p>
+    <!-- SECTION 3: WHAT I CAN DO -->
+    <div class="section-green">
+        <h2>WHAT I CAN DO FOR YOU</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🎵 Music Ministry</h3>
+                <p>Sebei Gospel songs that uplift and praise</p>
+            </div>
+            <div class="card">
+                <h3>🎨 Social Media Design</h3>
+                <p>Posters, flyers, and content for churches</p>
+            </div>
+            <div class="card">
+                <h3>🌐 Web Layouts</h3>
+                <p>Simple websites for artists and ministries</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4: YOUR MUSIC -->
+    <div class="section-maroon" id="music">
+        <h2>WINS I'M PROUD OF</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Suretap Makoryonded</h3>
+                <a href="https://youtu.be/nYLKK1-Z39U" class="btn" target="_blank">Listen Now</a>
+            </div>
+            <div class="card">
+                <h3>Krabungung (Your gift)</h3>
+                <a href="https://youtu.be/xFfCuD_WCs0" class="btn" target="_blank">Listen Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 5: SOCIAL + CONTACT -->
+    <div class="section-dark">
+        <h2>FOLLOW ME</h2>
+        <a href="https://facebook.com/musau.benjamin" class="btn" style="background:#1877F2; color:white;">📘 Facebook</a>
+        <a href="https://instagram.com/musau.benjamin" class="btn" style="background:#E1306C; color:white;">📷 Instagram</a>
+        <a href="https://tiktok.com/@rarespecies100" class="btn" style="background:#000; color:white;">🎵 TikTok</a>
+        <a href="https://benjaminmusau.blogspot.com" class="btn" style="background:#FF5722; color:white;">📝 Blog</a>
+        <br><br>
+        <h2 id="contact">BOOK ME</h2>
+        <a  href="https://www.canva.com/design/DAHD7ZT_K9E/xIydxSd7RB6ebadBaTKPQg/edit<a>
         <a href="https://wa.me/256785191109" class="btn">📱 WhatsApp Me</a>
     </div>
 
-    <footer>
-        <p>© 2026 Musau Benjamin All rights re</p>
+    <footer style="padding:20px; background:#111;">
+        <p>© 2026 Musau Benjamin | all rights reserved</p>
     </footer>
 </body>
-</html>
+    </html>
