@@ -7,11 +7,32 @@
     h1 { font-size: 2.8em; margin: 0; color: #FFD700; font-weight: bold; }
     h2 { font-size: 2.2em; color: #FFD700; margin-bottom: 20px; }
     .btn { background: #FFD700; color: black; padding: 14px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; margin: 8px; }
-    .btn-canva { background: #00C4CC; color: white; } /* Canva teal color */
-    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .card { background: #222; padding: 20px; border-radius: 15px; width: 280px; }
+    .btn-canva { background: #00C4CC; color: white; }
+    
+    /* FIXED GRID */
+    .grid { 
+        display: flex; 
+        flex-direction: column; /* stack instead of side by side */
+        align-items: center; /* center the cards */
+        gap: 20px; 
+        padding: 0 10px;
+    }
+    .card { 
+        background: #222; 
+        padding: 20px; 
+        border-radius: 15px; 
+        width: 100%; /* full width */
+        max-width: 400px; /* but not too wide on big screens */
+        box-sizing: border-box;
+    }
     .card img { width: 100%; border-radius: 10px; }
     .mdundo-player { margin-top: 15px; border-radius: 12px; overflow: hidden; }
+
+    /* Desktop: 2-3 cards per row */
+    @media (min-width: 768px) {
+        .grid { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+        .card { width: 300px; }
+    }
 </style>
 <body>
     <header></header>
@@ -32,13 +53,20 @@
         <a href="https://www.canva.com/design/DAHD7ZT_K9E/xIydxSd7RB6ebadBaTKPQg/edit" target="_blank" class="btn btn-canva">📄 View My Canva Portfolio</a>
     </div>
 <div class="card">
-    <div class="card" style="background:#1a1a1a; border:2px solid #FFD700;">
+   </div> <!-- This closes SECTION 2 -->
+
+<!-- MDUNDO CARD -->
+<div class="card" style="background:#1a1a1a; border:2px solid #FFD700;">
     <h3>🎵 All My Songs on Mdundo</h3>
     <p>Stream & Download 4 Gospel Tracks</p>
-    <a href="https://mdundo.com/in/music/693763/" target="_blank" class="btn" style="background:#FF5500; color:white; font-size:1.1em; padding:16px 32px;">
+    <a href="https://mdundo.com/in/music/693763/" target="_blank" class="btn" style="background:#FF5500; color:white; font-size:1.1em;">
         ▶ Listen on Mdundo
     </a>
     <p style="font-size:0.85em; color:#ccc; margin-top:10px;">Every play supports me 🙏</p>
+</div>
+<!-- END MDUNDO CARD -->
+
+<!-- SECTION 3: WHAT I CAN DO -->">Every play supports me 🙏</p>
 </div>
     <!-- SECTION 3: WHAT I CAN DO -->
     <div class="section-green">
