@@ -1,4 +1,10 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musau Benjamin - Gospel Artist & Designer</title>
+    <style>
     body { font-family: Arial; background: #0a0a0a; color: white; text-align: center; margin: 0; }
     .section-dark { background: #1a0a1a; padding: 50px 20px; }
     .section-green { background: #2a3d2a; padding: 50px 20px; }
@@ -12,8 +18,8 @@
     /* FIXED GRID */
     .grid { 
         display: flex; 
-        flex-direction: column; /* stack instead of side by side */
-        align-items: center; /* center the cards */
+        flex-direction: column;
+        align-items: center;
         gap: 20px; 
         padding: 0 10px;
     }
@@ -21,19 +27,22 @@
         background: #222; 
         padding: 20px; 
         border-radius: 15px; 
-        width: 100%; /* full width */
-        max-width: 400px; /* but not too wide on big screens */
+        width: 100%;
+        max-width: 400px;
         box-sizing: border-box;
     }
     .card img { width: 100%; border-radius: 10px; }
-    .mdundo-player { margin-top: 15px; border-radius: 12px; overflow: hidden; }
 
-    /* Desktop: 2-3 cards per row */
+    /* FOOTER */
+    footer { background: #000; padding: 20px; color: #ccc; font-size: 0.9em; }
+
+    /* Desktop: 3 cards per row */
     @media (min-width: 768px) {
         .grid { flex-direction: row; flex-wrap: wrap; justify-content: center; }
         .card { width: 300px; }
     }
 </style>
+</head>
 <body>
     <header></header>
 
@@ -48,26 +57,24 @@
     <!-- SECTION 2: ABOUT ME -->
     <div class="section-maroon">
         <h1>HI, I'M MUSAU BENJAMIN, a Rare Kind of Species, a diamond and the only precious gift God gave to mankind</h1>
-        <p>Gospel Artist | Sebei Praise | BOT USER |Designer</p>
+        <p>Gospel Artist | Sebei Praise | BOT USER | Designer</p>
         <a href="#music" class="btn">Explore My Music</a>
         <a href="https://www.canva.com/design/DAHD7ZT_K9E/xIydxSd7RB6ebadBaTKPQg/edit" target="_blank" class="btn btn-canva">📄 View My Canva Portfolio</a>
     </div>
-<div class="card">
-   </div> <!-- This closes SECTION 2 -->
 
-<!-- MDUNDO CARD -->
-<div class="card" style="background:#1a1a1a; border:2px solid #FFD700;">
-    <h3>🎵 All My Songs on Mdundo</h3>
-    <p>Stream & Download 4 Gospel Tracks</p>
-    <a href="https://mdundo.com/in/music/693763/" target="_blank" class="btn" style="background:#FF5500; color:white; font-size:1.1em;">
-        ▶ Listen on Mdundo
-    </a>
-    <p style="font-size:0.85em; color:#ccc; margin-top:10px;">Every play supports me 🙏</p>
-</div>
-<!-- END MDUNDO CARD -->
+    <!-- MDUNDO CARD -->
+    <div class="section-dark">
+        <div class="card" style="background:#1a1a1a; border:2px solid #FFD700;">
+            <h3>🎵 All My Songs on Mdundo</h3>
+            <p>Stream & Download 4 Gospel Tracks</p>
+            <a href="https://mdundo.com/in/music/693763/" target="_blank" class="btn" style="background:#FF5500; color:white; font-size:1.1em;">
+                ▶ Listen on Mdundo
+            </a>
+            <p style="font-size:0.85em; color:#ccc; margin-top:10px;">Every play supports me 🙏</p>
+        </div>
+    </div>
+    <!-- END MDUNDO CARD -->
 
-<!-- SECTION 3: WHAT I CAN DO -->">Every play supports me 🙏</p>
-</div>
     <!-- SECTION 3: WHAT I CAN DO -->
     <div class="section-green">
         <h2>WHAT I CAN DO FOR YOU</h2>
@@ -87,18 +94,34 @@
             </div>
         </div>
     </div>
-    
 
     <!-- SECTION 4: YOUR MUSIC -->
     <div class="section-maroon" id="music">
-        <h2>WINS I'M PROUD OF</h2>
-        <div class="card">
-                <h3>Yesu Atiyeninge (I lean on You)</h3>
-                <a href="https://youtu.be/1RlZj3cgktw?si=Zj9MpgggwUI7TAgx" class="btn" target="_blank">Listen
+        <h2>WINS I'M PROUD OF 🥳</h2>
         <div class="grid">
             <div class="card">
+                <h3>Yesu Atiyeninge (I lean on You)</h3>
+                <a href="https://youtu.be/1RlZj3cgktw?si=Zj9MpgggwUI7TAgx" class="btn" target="_blank">Listen on YouTube</a>
+            </div>
+            <div class="card">
                 <h3>Suretap Makoryonded</h3>
-                <a href="https://youtu.be/nYLKK1-Z39U" class="btn" target="_blank">Listen Now</a>
+                <a href="https://youtu.be/nYLKK1-Z39U" class="btn" target="_blank">Listen on YouTube</a>
+            </div>
+            <div class="card">
+                <h3>Krabung (Your gift)</h3>
+                <a href="https://youtu.be/xFfCuD_WCs0" class="btn" target="_blank">Listen on YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER WITH COPYRIGHT -->
+    <footer>
+        <p>© 2026 Musau Benjamin. All Rights Reserved.</p>
+        <p>God's Grace music Inc. Gospel Artist | Sebei/Kalenjin Praise | 𝑹𝒂𝒓𝒆 𝑺𝒑𝒆𝒄𝒊𝒆𝒔™</p>
+    </footer>
+
+</body>
+</html>                <a href="https://youtu.be/nYLKK1-Z39U" class="btn" target="_blank">Listen Now</a>
             </div>
             <div class="card">
                 <h3>Krabungung (Your gift)</h3>
